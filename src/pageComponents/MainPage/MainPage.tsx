@@ -13,6 +13,10 @@ const StatisticSection = dynamic(
 
 const TeamSection = dynamic(() => import('@/layout/sections/TeamSection/TeamSection'));
 
+const BonusAndFaqSection = dynamic(
+  () => import('@/layout/sections/BonusAndFaqSection/BonusAndFaqSection'),
+);
+
 export const MainPage = () => {
   return (
     <main className={styles.root}>
@@ -20,6 +24,7 @@ export const MainPage = () => {
       <WhatLearnSection />
       <StatisticSection />
       <TeamSection />
+      <BonusAndFaqSection />
     </main>
   );
 };

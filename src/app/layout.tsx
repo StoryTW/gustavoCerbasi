@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import '@/assets/styles/index.scss';
-import { Footer } from '@/layout/Footer/Footer';
 import { ReactNode } from 'react';
 import clsx from 'clsx';
 import localFont from 'next/font/local'
+import Footer from '@/layout/Footer/Footer';
 
 const aa_stetica = localFont({
   src: [

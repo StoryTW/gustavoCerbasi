@@ -1,7 +1,12 @@
 import React from 'react'
+import styles from './Footer.module.scss'
 
-export const Footer = () => {
+export default function Footer() {
   return (
-    <div>Footer</div>
+    <footer className={styles.root}>
+      <div className={styles.wrapper}>
+        dasda
+      </div>
+    </footer>
   )
 }
