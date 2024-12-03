@@ -1,15 +1,28 @@
 .root {
-  background-image: url('/public/images/bg_whatlearn.png');
-  background-repeat: no-repeat;
-  background-position: top center;
+  background-color: var(--white);
+}
+
+.bg {
+  background:
+    url('/images/bg_whatlearn.png') no-repeat top center,
+    url('/images/bg_whatlearn_2.svg') no-repeat top center;
 }
 
 .wrapper {
   display: flex;
+  padding: 116px 64px 430px;
+  gap: 110px;
 }
 
 .title {
-  
+  @include AAStetica_157_900;
+  color: var(--white);
+  max-width: 950px;
+  width: 100%;
+
+  span {
+    color: var(--light-blue);
+  }
 }
 
 .content {

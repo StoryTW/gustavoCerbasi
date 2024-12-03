@@ -1,0 +1,56 @@
+.root {
+  background-color: var(--white);
+}
+
+.wrapper {
+  padding: 64px 90px 32px;
+}
+
+.title {
+  @include AAStetica_54_500;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.description {
+  @include AAStetica_44_400;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.content {
+  background: url('/images/bg_statistic.svg') no-repeat top center;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 135px 86px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  &.first {
+    margin-left: 90px;
+  }
+
+  &.three {
+    margin-left: 580px;
+  }
+}
+
+.cardTitle {
+  @include AAStetica_86_900;
+  color: var(--black);
+
+  span {
+    color: var(--light-blue);
+  }
+}
+
+.cardDescription {
+  @include AAStetica_44_400;
+  color: var(--black);
+}

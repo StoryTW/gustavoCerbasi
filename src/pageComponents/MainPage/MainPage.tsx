@@ -7,11 +7,16 @@ const WhatLearnSection = dynamic(
   () => import('@/layout/sections/WhatLearnSection/WhatLearnSection'),
 );
 
+const StatisticSection = dynamic(
+  () => import('@/layout/sections/StatisticSection/StatisticSection'),
+);
+
 export const MainPage = () => {
   return (
     <main className={styles.root}>
       <MainSection />
       <WhatLearnSection />
+      <StatisticSection />
     </main>
   );
 };

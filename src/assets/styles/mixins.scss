@@ -115,23 +115,51 @@
 }
 
 //Typography
-@mixin Inter_75_900 {
+@mixin AAStetica_75_900 {
   font-size: 75px;
   font-style: normal;
   font-weight: 900;
   line-height: 115%;
 }
 
-@mixin Inter_44_400 {
+@mixin AAStetica_44_400 {
   font-size: 44px;
   font-style: normal;
   font-weight: 400;
   line-height: 115%;
 }
 
-@mixin Inter_32_400 {
+@mixin AAStetica_24_400 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+}
+
+@mixin AAStetica_157_900 {
+  font-size: 157px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 115%;
+}
+
+@mixin AAStetica_54_500 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+}
+
+@mixin AAStetica_32_400 {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
+  line-height: 115%;
+}
+
+@mixin AAStetica_86_900 {
+  font-size: 86px;
+  font-style: normal;
+  font-weight: 900;
   line-height: 115%;
 }

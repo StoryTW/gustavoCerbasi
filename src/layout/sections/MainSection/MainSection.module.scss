@@ -11,7 +11,7 @@
 }
 
 .title {
-  @include Inter_75_900;
+  @include AAStetica_75_900;
   text-align: center;
   max-width: 1030px;
   color: var(--white);
@@ -23,13 +23,13 @@
 }
 
 .description {
-  @include Inter_44_400;
+  @include AAStetica_44_400;
   color: var(--white);
   margin-bottom: 134px;
 }
 
 .timer {
-  @include Inter_75_900;
+  @include AAStetica_75_900;
   color: var(--white);
   margin-bottom: 146px;
 }
@@ -42,7 +42,7 @@
   border-radius: 40px;
   margin-bottom: 118px;
   position: relative;
-  @include Inter_32_400;
+  @include AAStetica_32_400;
   color: var(--black);
   max-height: 84px;
   cursor: pointer;

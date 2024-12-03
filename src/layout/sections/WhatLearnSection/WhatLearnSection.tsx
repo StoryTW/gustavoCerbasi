@@ -20,14 +20,29 @@ const DATA = [
 export default function WhatLearnSection() {
   return (
     <section className={styles.root}>
-      <div className={styles.wrapper}>
-        <h2 className={styles.title}>O que você aprenderá?</h2>
-        <div className={styles.content}>
-          {DATA.map((card) => {
-            return (
-              <LearnCard key={card.text} icon={card.icon} text={card.text} />
-            )
-          })}
+      <div className={styles.bg}>
+        <div className={styles.wrapper}>
+          <h2 className={styles.title}>
+            O que você <span>aprenderá</span>?
+          </h2>
+          <div className={styles.content}>
+            {DATA.map((card, i) => {
+              if (i === 1) {
+                return (
+                  <LearnCard
+                    key={card.text}
+                    icon={card.icon}
+                    text={card.text}
+                    style={{
+                      marginLeft: '130px',
+                    }}
+                  />
+                );
+              }
+
+              return <LearnCard key={card.text} icon={card.icon} text={card.text} />;
+            })}
+          </div>
         </div>
       </div>
     </section>

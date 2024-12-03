@@ -1,0 +1,18 @@
+.card {
+  background-color: var(--dark-gray);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.wrapper {
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.text {
+  @include AAStetica_24_400;
+  color: var(--white);
+}
