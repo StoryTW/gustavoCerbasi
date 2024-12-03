@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@/assets/styles/index.scss';
-import { Header } from '@/layout/Header/Header';
 import { Footer } from '@/layout/Footer/Footer';
 import { ReactNode } from 'react';
 import clsx from 'clsx';

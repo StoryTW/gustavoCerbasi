@@ -1,0 +1,19 @@
+.root {
+  background-image: url('/public/images/bg_whatlearn.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.title {
+  
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
