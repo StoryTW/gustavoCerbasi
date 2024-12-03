@@ -11,12 +11,15 @@ const StatisticSection = dynamic(
   () => import('@/layout/sections/StatisticSection/StatisticSection'),
 );
 
+const TeamSection = dynamic(() => import('@/layout/sections/TeamSection/TeamSection'));
+
 export const MainPage = () => {
   return (
     <main className={styles.root}>
       <MainSection />
       <WhatLearnSection />
       <StatisticSection />
+      <TeamSection />
     </main>
   );
 };
