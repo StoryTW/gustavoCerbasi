@@ -1,0 +1,59 @@
+.root {
+  background: url('/images/bg_bonus.png') no-repeat top center;
+}
+
+.wrapper {
+  padding-top: 24px;
+}
+
+.title {
+  @include AAStetica_86_900;
+  color: var(--white);
+  margin-bottom: 95px;
+  max-width: 884px;
+  margin-left: 64px;
+}
+
+.btnWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 66px;
+}
+
+.btn {
+  padding: 34px;
+  width: 100%;
+  max-width: 1036px;
+  background-color: var(--light-blue);
+  border-radius: 40px;
+  margin-bottom: 118px;
+  position: relative;
+  @include AAStetica_44_400;
+  color: var(--black);
+  max-height: 117px;
+  cursor: pointer;
+  @include transition;
+
+  &:focus {
+    background-color: var(--light-blue);
+  }
+
+  &:hover {
+    box-shadow: 0 0 24px var(--light-blue);
+  }
+
+  .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.timer {
+  @include AAStetica_86_900;
+  color: var(--white);
+  margin-bottom: 46px;
+  text-align: center;
+}

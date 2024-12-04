@@ -1,0 +1,11 @@
+.root {
+  cursor: pointer;
+  padding: 34px 62px;
+  background: var(--light-blue);
+}
+
+.questionWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

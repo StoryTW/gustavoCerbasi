@@ -13,8 +13,12 @@ const StatisticSection = dynamic(
 
 const TeamSection = dynamic(() => import('@/layout/sections/TeamSection/TeamSection'));
 
-const BonusAndFaqSection = dynamic(
-  () => import('@/layout/sections/BonusAndFaqSection/BonusAndFaqSection'),
+const BonusSection = dynamic(
+  () => import('@/layout/sections/BonusSection/BonusSection'),
+);
+
+const FaqSection = dynamic(
+  () => import('@/layout/sections/FaqSection/FaqSection'),
 );
 
 export const MainPage = () => {
@@ -24,7 +28,8 @@ export const MainPage = () => {
       <WhatLearnSection />
       <StatisticSection />
       <TeamSection />
-      <BonusAndFaqSection />
+      <BonusSection />
+      <FaqSection />
     </main>
   );
 };
