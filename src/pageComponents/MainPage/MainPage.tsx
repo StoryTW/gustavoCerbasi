@@ -25,9 +25,9 @@ export const MainPage = () => {
     <main>
       <MainSection />
       <WhatLearnSection />
-      {/* <StatisticSection /> */}
-      {/* <TeamSection /> */}
-      {/* <BonusSection /> */}
+      <StatisticSection />
+      <TeamSection />
+      <BonusSection />
       {/* <FaqSection /> */}
     </main>
   );

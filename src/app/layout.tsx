@@ -54,7 +54,7 @@ export default function RootLayout({ children }: IRootLayout) {
     <html lang='pt-br'>
       <body className={clsx(aa_stetica.className, 'container')}>
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
