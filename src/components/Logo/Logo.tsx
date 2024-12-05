@@ -12,6 +12,7 @@ export const Logo = () => {
         width={299}
         height={48}
         alt='logo'
+        className={styles.logo}
       />
     </Link>
   )

@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './MainPage.module.scss';
 import MainSection from '@/layout/sections/MainSection/MainSection';
 import dynamic from 'next/dynamic';
 
@@ -23,13 +22,13 @@ const FaqSection = dynamic(
 
 export const MainPage = () => {
   return (
-    <main className={styles.root}>
+    <main>
       <MainSection />
       <WhatLearnSection />
-      <StatisticSection />
-      <TeamSection />
-      <BonusSection />
-      <FaqSection />
+      {/* <StatisticSection /> */}
+      {/* <TeamSection /> */}
+      {/* <BonusSection /> */}
+      {/* <FaqSection /> */}
     </main>
   );
 };

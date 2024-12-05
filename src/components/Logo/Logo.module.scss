@@ -2,4 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .logo {
+    @include respond(tabletL) {
+      width: 220px;
+      height: 44px;
+    }
+
+    @include respond(mobileL) {
+      width: 144px;
+      height: 32px;
+    }
+  }
 }

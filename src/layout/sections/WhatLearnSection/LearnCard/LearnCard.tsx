@@ -11,7 +11,7 @@ export const LearnCard: FC<ILearnCard> = ({ text, icon, ...props }) => {
   return (
     <div className={styles.card} {...props}>
       <div className={styles.wrapper}>
-        <Image src={icon} width={100} height={100} alt='icon' />
+        <Image src={icon} width={100} height={100} alt='icon' className={styles.icon} />
         <div className={styles.text}>{text}</div>
       </div>
     </div>

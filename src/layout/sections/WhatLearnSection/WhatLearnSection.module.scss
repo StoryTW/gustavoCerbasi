@@ -6,12 +6,42 @@
   background:
     url('/images/bg_whatlearn.png') no-repeat top center,
     url('/images/bg_whatlearn_2.svg') no-repeat top center;
+
+  @include respond(mobileL) {
+    background-size: cover, cover;
+  }
 }
 
 .wrapper {
   display: flex;
   padding: 116px 64px 430px;
   gap: 110px;
+
+  @media only screen and (max-width: 1840px) {
+    gap: 20px;
+  }
+
+  @include respond(laptopL) {
+    gap: 120px;
+  }
+
+  @include respond(laptopC) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include respond(tabletL) {
+    gap: 64px;
+  }
+
+  @include respond(tablet) {
+    padding: 84px 24px 330px;
+  }
+
+  @include respond(mobileL) {
+    padding: 48px 24px 130px;
+    gap: 32px;
+  }
 }
 
 .title {
@@ -19,6 +49,32 @@
   color: var(--white);
   max-width: 950px;
   width: 100%;
+
+  @media only screen and (max-width: 1840px) {
+    font-size: 92px;
+    max-width: 700px;
+  }
+
+  @include respond(laptopL) {
+    font-size: 84px;
+    max-width: min-content;
+  }
+
+  @include respond(laptopC) {
+    font-size: 64px;
+  }
+
+  @include respond(laptop) {
+    text-align: center;
+  }
+
+  @include respond(tabletL) {
+    font-size: 44px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 21px;
+  }
 
   span {
     color: var(--light-blue);
@@ -29,4 +85,13 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
+
+  @include respond(tabletL) {
+    display: grid;
+    grid-template-columns: minmax(280px, 600px);
+  }
+
+  @include respond(mobileL) {
+    gap: 16px;
+  }
 }

@@ -3,6 +3,19 @@
   border-radius: 10px;
   width: 100%;
   max-width: 600px;
+
+  @media only screen and (max-width: 1840px) {
+    max-width: 500px;
+  }
+
+  @media only screen and (max-width: 1340px) {
+    max-width: 340px;
+  }
+
+  @include respond(tabletL) {
+    margin: 0 auto !important;
+    max-width: none;
+  }
 }
 
 .wrapper {
@@ -10,9 +23,34 @@
   display: flex;
   align-items: center;
   gap: 32px;
+
+  @media only screen and (max-width: 1840px) {
+    padding: 16px;
+    gap: 16px;
+  }
 }
 
 .text {
   @include AAStetica_24_400;
   color: var(--white);
+
+  @include respond(tabletL) {
+    font-size: 18px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 14px;
+  }
+}
+
+.icon {
+  @media only screen and (max-width: 1840px) {
+    width: 64px;
+    height: 64px;
+  }
+
+  @include respond(mobileL) {
+    width: 40px;
+    height: 40px;
+  }
 }

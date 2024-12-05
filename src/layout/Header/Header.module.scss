@@ -2,4 +2,8 @@
   background: transparent;
   display: flex;
   padding: 24px 42px;
+
+  @include respond(mobileL) {
+    padding: 18px 24px;
+  }
 }
