@@ -1,10 +1,22 @@
 .root {
   background-color: var(--white);
   padding-bottom: 123px;
+
+  @include respond(tabletL) {
+    padding-bottom: 64px;
+  }
 }
 
 .wrapper {
   padding: 64px 90px 32px;
+
+  @include respond(laptopB) {
+    padding: 64px 24px 32px;
+  }
+
+  @include respond(tabletL) {
+    padding: 64px 24px 32px;
+  }
 }
 
 .title {
@@ -12,6 +24,14 @@
   color: var(--black);
   text-align: center;
   margin-bottom: 18px;
+
+  @include respond(tabletL) {
+    font-size: 44px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 24px;
+  }
 }
 
 .description {
@@ -19,6 +39,15 @@
   color: var(--black);
   text-align: center;
   margin-bottom: 72px;
+
+  @include respond(tabletL) {
+    font-size: 28px;
+    margin-bottom: 44px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 18px;
+  }
 }
 
 .content {
@@ -27,6 +56,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 135px 86px;
+
+  @include respond(laptopB) {
+    background: url('/images/bg_statistic_2.svg') no-repeat center center;
+    background-size: contain;
+  }
+
+  @include respond(tabletL) {
+    gap: 86px;
+  }
 }
 
 .card {
@@ -40,6 +78,16 @@
   &.three {
     margin-left: 580px;
   }
+
+  @include respond(laptopB) {
+    &.first {
+      margin: unset;
+    }
+  
+    &.three {
+      margin: unset;
+    }
+  }
 }
 
 .cardTitle {
@@ -49,9 +97,25 @@
   span {
     color: var(--light-blue);
   }
+
+  @include respond(tabletL) {
+    font-size: 64px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 32px;
+  }
 }
 
 .cardDescription {
   @include AAStetica_44_400;
   color: var(--black);
+
+  @include respond(tabletL) {
+    font-size: 32px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 22px;
+  }
 }
