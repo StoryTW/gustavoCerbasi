@@ -1,5 +1,16 @@
 .root {
-  background: url('/images/bg_bonus.png') no-repeat top center;
+  // background: url('/images/bg_bonus.png') no-repeat top center;
+  margin-top: 120px;
+  margin-bottom: 140px;
+
+  @include respond(tabletL) {
+    margin-bottom: 80px;
+  }
+
+  @include respond(mobileL) {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
 }
 
 .wrapper {
@@ -12,6 +23,22 @@
   margin-bottom: 95px;
   max-width: 884px;
   margin-left: 64px;
+
+  @media only screen and (max-width: 1350px) {
+    font-size: 64px;
+  }
+
+  @include respond(tabletL) {
+    font-size: 44px;
+    margin-left: unset;
+    text-align: center;
+  }
+
+  @include respond(mobileL) {
+    font-size: 21px;
+    margin-bottom: 48px;
+    padding: 0px 16px;
+  }
 }
 
 .btnWrapper {
@@ -20,6 +47,21 @@
   align-items: center;
   gap: 48px;
   margin-bottom: 66px;
+
+  @media only screen and (max-width: 1350px) {
+    gap: 24px;
+    margin-bottom: 32px;
+    padding: 0px 24px;
+  }
+
+  @include respond(tabletL) {
+    margin-left: unset;
+    text-align: center;
+  }
+
+  @include respond(mobileL) {
+    margin-bottom: 8px;
+  }
 }
 
 .btn {
@@ -36,6 +78,24 @@
   cursor: pointer;
   @include transition;
 
+  @media only screen and (max-width: 1350px) {
+    margin-bottom: 48px;
+    font-size: 32px;
+    padding: 24px;
+  }
+
+  @include respond(tabletL) {
+    font-size: 24px;
+    padding: 18px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 14px;
+    padding: 12px;
+    margin-bottom: 16px;
+    text-align: start;
+  }
+
   &:focus {
     background-color: var(--light-blue);
   }
@@ -48,6 +108,21 @@
     position: absolute;
     right: 0;
     top: 0;
+
+    @media only screen and (max-width: 1350px) {
+      width: 84.8px;
+      height: 84.8px;
+    }
+
+    @include respond(tabletL) {
+      width: 63.59px;
+      height: 63.59px;
+    }
+
+    @include respond(mobileL) {
+      width: 40.09px;
+      height: 40.09px;
+    }
   }
 }
 
@@ -56,4 +131,36 @@
   color: var(--white);
   margin-bottom: 46px;
   text-align: center;
+
+  @media only screen and (max-width: 1350px) {
+    font-size: 64px;
+  }
+
+  @include respond(tabletL) {
+    font-size: 44px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 21px;
+  }
+}
+
+.saleText {
+  @include AAStetica_54_500;
+  color: var(--white);
+  text-align: center;
+  padding: 0px 24px;
+
+  @media only screen and (max-width: 1350px) {
+    font-size: 44px;
+  }
+
+  @include respond(tabletL) {
+    font-size: 32px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 18px;
+    padding: 0px 16px;
+  }
 }

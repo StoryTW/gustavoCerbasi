@@ -29,9 +29,8 @@ export default function BonusSection() {
             />
           </button>
         </div>
-        <div className={styles.timer}>
-          12 : 21 : 15 : 27
-        </div>
+        <div className={styles.timer}>12 : 21 : 15 : 27</div>
+        <div className={styles.saleText}>Apenas hoje: 20% de desconto no curso!</div>
       </div>
     </section>
   );

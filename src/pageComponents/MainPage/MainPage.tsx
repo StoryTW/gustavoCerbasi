@@ -27,7 +27,7 @@ export const MainPage = () => {
       <WhatLearnSection />
       <StatisticSection />
       <TeamSection />
-      {/* <BonusSection /> */}
+      <BonusSection />
       <FaqSection />
     </main>
   );

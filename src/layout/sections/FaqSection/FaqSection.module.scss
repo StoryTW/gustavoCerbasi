@@ -1,12 +1,16 @@
-.root {
+// .root {
 
-}
+// }
 
 .wrapper {
   padding: 120px;
 
   @include respond(laptopL) {
     padding: 48px;
+  }
+
+  @include respond(tabletSM) {
+    padding: 48px 24px;
   }
 }
 
