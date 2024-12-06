@@ -1,15 +1,41 @@
 .root {
   background: url('/images/bg_footer.svg') no-repeat top center;
+
+  @include respond(mobileL) {
+    background-size: cover;
+  }
 }
 
 .wrapper {
   padding: 386px 155px 380px;
+
+  @include respond(tabletL) {
+    padding: 386px 48px 380px;
+  }
+
+  @include respond(mobileL) {
+    padding: 166px 24px 160px;
+  }
 }
 
 .title { 
   @include AAStetica_86_900;
   color: var(--white);
   margin-bottom: 70px;
+  text-align: center;
+
+  @include respond(laptopB) {
+    font-size: 64px;
+  }
+
+  @include respond(tablet) {
+    font-size: 44px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 21px;
+    margin-bottom: 32px;
+  }
 }
 
 .link {
@@ -22,11 +48,19 @@
   padding: 24px;
   margin: 0 auto;
   color: var(--light-blue);
+
+  @include respond(tabletSM) {
+    padding: 16px;
+  }
 }
 
 .logo {
   display: flex;
   padding: 0px 24px;
+
+  @include respond(tabletL) {
+    display: none;
+  }
 }
 
 .socials {
@@ -34,6 +68,10 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 76px;
+
+  @include respond(mobileL) {
+    margin-bottom: 32px;
+  }
 }
 
 .text {
@@ -42,6 +80,16 @@
   @include AAStetica_32_400;
   color: var(--light-blue);
   margin-bottom: 24px;
+
+  @include respond(tabletSM) {
+    font-size: 24px;
+    padding: 16px 120px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 18px;
+    padding: 16px 86px;
+  }
 }
 
 .list {

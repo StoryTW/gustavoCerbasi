@@ -25,10 +25,10 @@ export const MainPage = () => {
     <main>
       <MainSection />
       <WhatLearnSection />
-      <StatisticSection />
+      {/* <StatisticSection /> */}
       <TeamSection />
-      <BonusSection />
-      {/* <FaqSection /> */}
+      {/* <BonusSection /> */}
+      <FaqSection />
     </main>
   );
 };

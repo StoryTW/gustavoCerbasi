@@ -29,7 +29,11 @@ export default function FaqSection() {
       <div className={styles.wrapper}>
         <div className={styles.list}>
           {DATA.map((item) => {
-            return <FaqItem key={item.count} {...item} />;
+            if (item.count === '02/') {
+              return <FaqItem key={item.count} {...item} style={{ marginLeft: '140px' }} />;
+            }
+
+            return <FaqItem key={item.count} {...item} style={{ marginRight: '140px' }} />;
           })}
         </div>
       </div>

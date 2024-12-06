@@ -31,7 +31,7 @@ export default function TeamSection() {
               return (
                 <div key={card.name} className={styles.card}>
                   <div className={styles.cardWrapper}>
-                    <Image src={card.photoSrc} width={370} height={370} alt='photo' />
+                    <Image src={card.photoSrc} width={370} height={370} alt='photo'className={styles.photo} />
                     <div className={styles.name}>{card.name}</div>
                     <div className={styles.job}>{card.job}</div>
                   </div>

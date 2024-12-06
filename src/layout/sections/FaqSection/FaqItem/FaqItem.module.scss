@@ -2,10 +2,105 @@
   cursor: pointer;
   padding: 34px 62px;
   background: var(--light-blue);
+
+  @include respond(tabletL) {
+    padding: 24px;
+    margin: 0 auto !important;
+  }
+
+  @include respond(tabletSM) {
+    padding: 16px;
+  }
 }
 
 .questionWrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @include respond(tabletL) {
+    gap: 12px;
+  }
+
+  .count {
+    @include AAStetica_54_500;
+    font-size: 64px;
+    color: var(--white);
+
+    @include respond(laptopL) {
+      font-size: 44px;
+    }
+
+    @include respond(tabletL) {
+      font-size: 28px;
+    }
+
+    @include respond(tabletSM) {
+      font-size: 21px;
+    }
+  }
+
+  .text {
+    @include AAStetica_44_400;
+    color: var(--white);
+
+    @include respond(laptopL) {
+      font-size: 32px;
+    }
+
+    @include respond(tabletL) {
+      font-size: 24px;
+    }
+
+    @include respond(tabletSM) {
+      font-size: 21px;
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include transition;
+
+  &.active {
+    transform: rotate(180deg);
+  }
+
+  @include respond(tabletL) {
+    svg {
+      width: 49px;
+      height: 25px;
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 14px;
+  }
+}
+
+.answerLabel {
+  @include AAStetica_44_400;
+  color: var(--white);
+
+  @include respond(laptopL) {
+    font-size: 32px;
+  }
+
+  @include respond(tabletL) {
+    font-size: 24px;
+  }
+
+  @include respond(tabletSM) {
+    font-size: 21px;
+  }
 }

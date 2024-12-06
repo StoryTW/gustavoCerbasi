@@ -1,11 +1,11 @@
 'use client';
-import React, { FC, useState } from 'react';
+import React, { FC, HTMLAttributes, useState } from 'react';
 import styles from './FaqItem.module.scss';
 import { motion } from 'motion/react';
 import Arrow from '@/assets/images/ui/icon-arrow-down.svg';
 import clsx from 'clsx';
 
-interface IFaqItem {
+interface IFaqItem extends HTMLAttributes<HTMLDivElement> {
   count: string;
   question: string;
   answer: string;
@@ -20,13 +20,13 @@ const cardVariants = {
   },
 };
 
-export const FaqItem: FC<IFaqItem> = ({ count, question, answer }) => {
+export const FaqItem: FC<IFaqItem> = ({ count, question, answer, ...props }) => {
   const [isActive, setIsActive] = useState<boolean>(false);
 
   const toggle = () => setIsActive((prev) => !prev);
 
   return (
-    <div className={styles.root} onClick={toggle}>
+    <div className={styles.root} onClick={toggle} {...props}>
       <div className={styles.questionWrapper}>
         <div className={styles.question}>
           <div className={styles.count}>{count}</div>

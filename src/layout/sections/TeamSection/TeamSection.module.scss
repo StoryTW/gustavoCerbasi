@@ -4,10 +4,18 @@
 
 .bg {
   background: url('/images/bg_team.svg') no-repeat top center;
+
+  @include respond(tabletL) {
+    background-size: cover;
+  }
 }
 
 .wrapper {
   padding: 203px 64px 32px;
+
+  @include respond(tabletSM) {
+    padding: 140px 24px 32px;
+  }
 }
 
 .title {
@@ -15,12 +23,29 @@
   color: var(--white);
   text-align: center;
   margin-bottom: 100px;
+
+  @include respond(laptopL) {
+    font-size: 64px;
+    margin-bottom: 64px;
+  }
+
+  @include respond(tabletSM) {
+    font-size: 28px;
+  }
+
+  @include respond(mobileL) {
+    font-size: 21px;
+  }
 }
 
 .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
+
+  @include respond(tabletL) {
+    grid-template-columns: 1fr; 
+  }
 }
 
 .card {
@@ -28,15 +53,38 @@
   box-shadow: 0px 0px 24px var(--light-blue);
   border-radius: 40px;
 
+  @include respond(laptopL) {
+   background-size: cover;
+  }
+
   .cardWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 32px 48px;
 
+    @include respond(laptopL) {
+      padding: 24px;
+    }
+
     img {
-      box-shadow: 0px 0px 80px rgba(#03FFF2, 0.75);
+      box-shadow: 0px 0px 80px rgba(#03fff2, 0.75);
       border-radius: 50%;
+
+      @media only screen and (max-width: 1840px) {
+        width: 320px;
+        height: 320px;
+      }
+
+      @include respond(laptopL) {
+        width: 200px;
+        height: 200px;
+      }
+
+      @include respond(tabletSM) {
+        width: 160px;
+        height: 160px;
+      }
     }
 
     .name {
@@ -44,6 +92,16 @@
       color: var(--white);
       margin-bottom: 90px;
       margin-top: 10px;
+
+      @include respond(laptopL) {
+        font-size: 44px;
+        margin-bottom: 60px;
+      }
+
+      @include respond(tabletSM) {
+        margin-bottom: 32px;
+        font-size: 24px;
+      }
     }
 
     .job {
@@ -51,6 +109,14 @@
       color: var(--white);
       text-align: center;
       max-width: 480px;
+
+      @include respond(laptopL) {
+        font-size: 24px;
+      }
+
+      @include respond(tabletSM) {
+        font-size: 18px;
+      }
     }
   }
 }
